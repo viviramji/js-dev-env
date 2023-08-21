@@ -1,3 +1,16 @@
 language: node_js
 node_js:
-  - "6"
+  - "14" # You can use a more recent version here
+
+before_install:
+  - npm install -g npm # Update npm to the latest version
+
+install:
+  - npm ci # Use 'npm ci' for a clean and consistent install
+
+script:
+  - npm test # Run your tests or build here
+
+cache:
+  directories:
+    - node_modules # Cache node_modules for faster builds
