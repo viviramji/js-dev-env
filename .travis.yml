@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "14" # You can use a more recent version here
+  - "14" # node version
 
 before_install:
   - npm install -g npm # Update npm to the latest version
